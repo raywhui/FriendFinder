@@ -1,7 +1,6 @@
 var friends = require('../data/friends.js');
-var dummyScore = [3, 3, 3, 3, 3, 3, 3, 3, 3, 3];
 var friendCompare =[];
-
+var chosenFriendIndex;
 
 module.exports = function(app){
 	app.get('/api/friends', function(req,res){
@@ -10,12 +9,13 @@ module.exports = function(app){
 
 	//Used to compare scores of friends to user score.Post does not need to change any data, just used for any incoming data
 	app.post('/api/friends', function(req,res){
-		var surveyScores = req.body.survey
-
+		var surveyScores = req.body.survey;
 		console.log(surveyScores);
-
 		friendCompare = [];
 		friendsFunct(surveyScores,afterFriends);
+
+		//Response after receiving user input
+		res.json(friends[chosenFriendIndex]);
 	});
 };
 
@@ -42,7 +42,7 @@ function friendsFunct(surveyScores,callback){
 };
 
 function afterFriends(){
-	var chosenFriendIndex;
+	chosenFriendIndex = 0;
 	
 	for (var k=0; k < friendCompare.length; k++){
 		//Adds first index to var chosenFriendIndex
