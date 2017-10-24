@@ -1,0 +1,145 @@
+/*home page*/
+.photo{
+		width:400px;
+		float:left;
+		clear:left;
+		/*position: relative;*/
+		/*left:0;*/
+		margin-right: 20px;
+	}
+.btn{
+	font-size: 50pt;
+	float:right;
+	margin: 0 100px;
+	font-weight: bold;
+	cursor: auto;
+}
+.red{
+	color:red;
+}
+.giant-font{
+	font-size: 48pt;
+	font-weight: bold;
+}
+.gianter-font{
+	font-size: 60pt;
+	font-weight: bold;
+}
+.hold{
+	position: relative;
+}
+.clickbait{
+	position:absolute;
+	bottom:-100px;
+	font-weight: bold;	
+	font-size: 20px;
+	left:3	0px;
+	text-align:center;
+	color:red;
+	animation: flash 0.1s infinite;
+}
+.giantest-font{
+	text-align:center;
+	font-weight: bold;
+	font-size: 65pt;
+	color:red;
+	animation: flash 0.5s infinite;
+}
+@keyframes flash {
+  from {color: transparent;}
+  to {color: red;}
+}
+
+/*survey Page*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 700px; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 15px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    background: red; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 20%; /* Full-width */
+    height: 10px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    margin:10px;
+}
+
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+.input-title{
+  font-weight: bold;
+  font-size: 18pt;
+}
+
+.strike{
+  text-decoration: line-through;
+}
+
+.question{
+	padding:15px;
+}
+
+.questioning{
+	font-weight: bold;
+}
+
+.numberDisplay{
+	color:red;
+	font-size: 15pt;
+	font-weight: bold;
+}
+
+button.find{
+	float:none;
+	margin:10px 50px;
+	cursor: pointer;
+}

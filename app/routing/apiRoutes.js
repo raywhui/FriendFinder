@@ -9,11 +9,14 @@ module.exports = function(app){
 
 	//Used to compare scores of friends to user score.Post does not need to change any data, just used for any incoming data
 	app.post('/api/friends', function(req,res){
-		var surveyScores = req.body.survey;
+		var surveyScores = req.body.scores;
+		
 		console.log(surveyScores);
 		friendCompare = [];
 		friendsFunct(surveyScores,afterFriends);
 
+		friends.push(req.body);
+		
 		//Response after receiving user input
 		res.json(friends[chosenFriendIndex]);
 	});

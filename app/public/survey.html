@@ -3,48 +3,11 @@
 <head>
 	<title>FriendShip - Survey</title>
 </head>
-
-	 <script src="https://code.jquery.com/jquery.js"></script>
-	 <style type="text/css">
-	 	/* The Modal (background) */
-		.modal {
-		    display: none; /* Hidden by default */
-		    position: fixed; /* Stay in place */
-		    z-index: 1; /* Sit on top */
-		    left: 0;
-		    top: 0;
-		    width: 100%; /* Full width */
-		    height: 100%; /* Full height */
-		    overflow: auto; /* Enable scroll if needed */
-		    background-color: rgb(0,0,0); /* Fallback color */
-		    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-		}
-
-		/* Modal Content/Box */
-		.modal-content {
-		    background-color: #fefefe;
-		    margin: 15% auto; /* 15% from the top and centered */
-		    padding: 20px;
-		    border: 1px solid #888;
-		    width: 700px; /* Could be more or less, depending on screen size */
-		}
-
-		/* The Close Button */
-		.close {
-		    color: #aaa;
-		    float: right;
-		    font-size: 28px;
-		    font-weight: bold;
-		}
-
-		.close:hover,
-		.close:focus {
-		    color: black;
-		    text-decoration: none;
-		    cursor: pointer;
-		}
-	 </style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" isntegrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" content-type="text/css" href="./css/style.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
 <body>
+
 	<!-- The Modal -->
 	<div id="myModal" class="modal">
 
@@ -59,69 +22,98 @@
 	</div>
 
 
-	<h1>Finish this Survey to Find Hot Singles in Your Area!</h1>
+	<h1 class="giantest-font">Finish this Survey to Find Hot Singles in Your Area!</h1>
 
-	<h3>1. How much do you like the taste of beer?</h3>
-	<div class="slidecontainer">
-	  <span>Eww gross. 1</span><input type="range" min="1" max="5" value="3" class="slider"><span>5 I love it.</span>
-	  <span>Value: </span><span class="numberDisplay">3</span>
-	</div>
+	<div class="container">
+		<div class='input-title'><span class='strike'>Social Security #</span> Name:</div>
+		<input type="text" class="form-control your-name" placeholder="Joe Snow">
+		<br>
+		<div class='input-title'><span class='strike'>Credit Card #</span> Photo:</div>
+		<input type="text" class="form-control your-photo" placeholder="URL">
 
-	<h3>2. How much do you like horror movies?</h3>
-	<div class="slidecontainer">
-	  <span>I hate it. 1</span><input type="range" min="1" max="5" value="3" class="slider"><span>5 I love it.</span>
-	  <span>Value: </span><span class="numberDisplay">3</span>
-	</div>
+		<div class='question'>
+			<h3 class='questioning'>1. How much do you like the taste of beer?</h3>
+			<div class="slidecontainer">
+			  <span>Eww gross. 1</span><input type="range" min="1" max="5" value="3" class="slider"><span>5 I love it.</span>
+			  <span>Value: </span><span class="numberDisplay">3</span>
+			</div>
+		</div>
 
-	<h3>3. Do you prefer the people in your life to be simple or complex?</h3>
-		<div class="slidecontainer">
-	  <span>Simple. 1</span><input type="range" min="1" max="5" value="3" class="slider"><span>5 Complex.</span>
-	  <span>Value: </span><span class="numberDisplay">3</span>
-	</div>
+		<div class='question'>
+			<h3 class='questioning'>2. How much do you like horror movies?</h3>
+			<div class="slidecontainer">
+			  <span>I hate it. 1</span><input type="range" min="1" max="5" value="3" class="slider"><span>5 I love it.</span>
+			  <span>Value: </span><span class="numberDisplay">3</span>
+			</div>
+		</div>
 
-	<h3>4. How much do spelling and grammar mistakes annoy you?</h3>
-	<div class="slidecontainer">
-	  <span>nAwT aLoOt. 1</span><input type="range" min="1" max="5" value="3" class="slider"><span>5 Indubiously.</span>
-	  <span>Value: </span><span class="numberDisplay">3</span>
-	</div>
+		<div class='question'>
+			<h3 class='questioning'>3. Do you prefer the people in your life to be simple or complex?</h3>
+				<div class="slidecontainer">
+			  <span>Simple. 1</span><input type="range" min="1" max="5" value="3" class="slider"><span>5 Complex.</span>
+			  <span>Value: </span><span class="numberDisplay">3</span>
+			</div>
+		</div>
 
-	<h3>5. How would you rate your relationship with your mom?</h3>
-	<div class="slidecontainer">
-	  <span>Not great. 1</span><input type="range" min="1" max="5" value="3" class="slider"><span>5 Love my mom!</span>
-	  <span>Value: </span><span class="numberDisplay">3</span>
-	</div>
+		<div class='question'>
+			<h3 class='questioning'>4. How much do spelling and grammar mistakes annoy you?</h3>
+			<div class="slidecontainer">
+			  <span>nAwT aLoOt. 1</span><input type="range" min="1" max="5" value="3" class="slider"><span>5 Indubiously.</span>
+			  <span>Value: </span><span class="numberDisplay">3</span>
+			</div>
+		</div>
 
-	<h3>6. On a scale of 1-5, how much do you enjoy eating?</h3>
-	<div class="slidecontainer">
-	  <span>Eat to live. 1</span><input type="range" min="1" max="5" value="3" class="slider"><span>5 Live to eat.</span>
-	  <span>Value: </span><span class="numberDisplay">3</span>
-	</div>
+		<div class='question'>
+			<h3 class='questioning'>5. How would you rate your relationship with your mom?</h3>
+			<div class="slidecontainer">
+			  <span>Not great. 1</span><input type="range" min="1" max="5" value="3" class="slider"><span>5 Love my mom!</span>
+			  <span>Value: </span><span class="numberDisplay">3</span>
+			</div>
+		</div>
 
-	<h3>7. How would you rate the quality of our service?</h3>
-	<div class="slidecontainer">
-	  <span>Terrible. 1</span><input type="range" min="1" max="5" value="3" class="slider"><span>5 Fantastic!</span>
-	  <span>Value: </span><span class="numberDisplay">3</span>
-	</div>
+		<div class='question'>
+			<h3 class='questioning'>6. On a scale of 1-5, how much do you enjoy eating?</h3>
+			<div class="slidecontainer">
+			  <span>Eat to live. 1</span><input type="range" min="1" max="5" value="3" class="slider"><span>5 Live to eat.</span>
+			  <span>Value: </span><span class="numberDisplay">3</span>
+			</div>
+		</div>
 
-	<h3>8. How much do you believe in life after love?</h3>
-	<div class="slidecontainer">
-	  <span>Nope you dead. 1</span><input type="range" min="1" max="5" value="3" class="slider"><span>5 There is true love!</span>
-	  <span>Value: </span><span class="numberDisplay">3</span>
-	</div>
+		<div class='question'>
+			<h3 class='questioning'>7. How would you rate the quality of our service?</h3>
+			<div class="slidecontainer">
+			  <span>Terrible. 1</span><input type="range" min="1" max="5" value="3" class="slider"><span>5 Fantastic!</span>
+			  <span>Value: </span><span class="numberDisplay">3</span>
+			</div>
+		</div>
 
-	<h3>9. How much do you believe that Neo was truly the one in The Matrix?</h3>
-	<div class="slidecontainer">
-	  <span>Definitely not the One. 1</span><input type="range" min="1" max="5" value="3" class="slider"><span>5 He is the One!</span>
-	  <span>Value: </span><span class="numberDisplay">3</span>
-	</div>
+		<div class='question'>
+			<h3 class='questioning'>8. How much do you believe in life after love?</h3>
+			<div class="slidecontainer">
+			  <span>Nope you dead. 1</span><input type="range" min="1" max="5" value="3" class="slider"><span>5 There is true love!</span>
+			  <span>Value: </span><span class="numberDisplay">3</span>
+			</div>
+		</div>		
 
-	<h3>10. What is the largest number you can think of?</h3>
-	<div class="slidecontainer">
-	  <span>1</span><input type="range" min="1" max="5" value="3" class="slider"><span>5</span>
-	  <span>Value: </span><span class="numberDisplay">3</span>
-	</div>
+		<div class='question'>
+			<h3 class='questioning'>9. How much do you believe that Neo was truly the one in The Matrix?</h3>
+			<div class="slidecontainer">
+			  <span>Definitely not the One. 1</span><input type="range" min="1" max="5" value="3" class="slider"><span>5 He is the One!</span>
+			  <span>Value: </span><span class="numberDisplay">3</span>
+			</div>
+		</div>
 
-	<button type="button" class="btn btn-primary find">Find Me My Singles!</button>
+		<div class='question'>
+			<h3 class='questioning'>10. What is the largest number you can think of?</h3>
+			<div class="slidecontainer">
+			  <span>1</span><input type="range" min="1" max="5" value="3" class="slider"><span>5</span>
+			  <span>Value: </span><span class="numberDisplay">3</span>
+			</div>
+		</div>
+
+		<button type="button" class="btn btn-primary find">Find Me My Singles!</button>
+
+	</div><!--container-->
 
 </body>
 
@@ -134,10 +126,14 @@
 
 	//Send the array of values to the MOOOOON!
 	$('.find').on('click', function(){
-		var friendSurvey = { survey:[] };
+		var friendSurvey = { 
+			name: $('.your-name').val().trim(),
+			photo: $('.your-photo').val().trim(),
+			scores:[] 
+		};
 
 		$('.slider').each(function(){
-			friendSurvey.survey.push($(this).val());
+			friendSurvey.scores.push(parseInt($(this).val()));
 		});
 		console.log(friendSurvey);
 
